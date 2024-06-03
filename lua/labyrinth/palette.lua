@@ -1,6 +1,6 @@
 local options = require("labyrinth.config").options
 local variants = {
-    dusk = {
+    gloom = {
         _nc = "#0a0e14",
         base = "#10141b",
         surface = "#161b24",
@@ -19,7 +19,7 @@ local variants = {
         highlight_high = "#505b72",
         none = "NONE",
     },
-    shade = {
+    dusk = {
         _nc = "#121620",
         base = "#181b24",
         surface = "#1e222d",
@@ -36,6 +36,44 @@ local variants = {
         highlight_low = "#282d3c",
         highlight_med = "#434a62",
         highlight_high = "#596579",
+        none = "NONE",
+    },
+    shade = {
+        _nc = "#161821",
+        base = "#1c1f29",
+        surface = "#222732",
+        overlay = "#282d39",
+        muted = "#646a7c",
+        subtle = "#8a91a3",
+        text = "#c4c7d4",
+        crimson = "#b15366",
+        sun = "#c88b59",
+        amber = "#c88b7a",
+        moss = "#387464",
+        leaf = "#82a0a0",
+        haze = "#827398",
+        highlight_low = "#2e3343",
+        highlight_med = "#4a5167",
+        highlight_high = "#5f6a7d",
+        none = "NONE",
+    },
+    mist = {
+        _nc = "#1a1c24",
+        base = "#20232b",
+        surface = "#262933",
+        overlay = "#2c2f39",
+        muted = "#707785",
+        subtle = "#8e95a5",
+        text = "#b0b3bf",
+        crimson = "#9a4856",
+        sun = "#ae7b4d",
+        amber = "#ae7b6a",
+        moss = "#2f5e52",
+        leaf = "#6c8a8a",
+        haze = "#6c5f7f",
+        highlight_low = "#343a4c",
+        highlight_med = "#565d75",
+        highlight_high = "#717a8f",
         none = "NONE",
     },
 }

@@ -1,4 +1,4 @@
----@alias Variant "dusk" | "shade"
+---@alias Variant "gloom" | "dusk" | "shade" | "mist"
 ---@alias Palette { base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, crimson: string, sun: string, amber: string, moss: string, leaf: string, haze: string }
 ---@alias PaletteColor "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "crimson" | "sun" | "amber" | "moss" | "leaf" | "haze" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
@@ -9,12 +9,8 @@ local config = {}
 config.options = {
     ---Set the desired variant: "auto" will follow the vim background,
     ---defaulting to `dark_variant` or "main" for dark and "dawn" for light.
-    ---@type "auto" | Variant
-    variant = "auto",
-
-    ---Set the desired dark variant when `options.variant` is set to "auto".
     ---@type Variant
-    dark_variant = "dusk",
+    variant = "dusk",
 
     ---Differentiate between active and inactive windows and panels.
     dim_inactive_windows = false,
@@ -66,15 +62,6 @@ config.options = {
         h4 = "sun",
         h5 = "moss",
         h6 = "leaf",
-
-        ---@deprecated Replaced by `options.highlight_groups["Normal"]`
-        -- background = "base",
-        ---@deprecated Replaced by `options.highlight_groups["Comment"]`
-        -- comment = "subtle",
-        ---@deprecated Replaced by `options.highlight_groups["@punctuation"]`
-        -- punctuation = "muted",
-        ---@deprecated Expects a table with values h1...h6
-        -- headings = "text",
     },
 
     ---@type table<string, Highlight>
@@ -86,17 +73,6 @@ config.options = {
     ---@param palette Palette
     ---@diagnostic disable-next-line: unused-local
     before_highlight = function(group, highlight, palette) end,
-
-    ---@deprecated Replaced by `options.dim_inactive_windows`
-    -- dim_nc_background = false,
-    ---@deprecated Replaced by `options.enable.transparency`
-    -- disable_background = false,
-    ---@deprecated Replaced by `options.highlight_groups["NormalFloat"]`
-    -- disable_float_background = false,
-    ---@deprecated Replaced by `options.styles.italic`
-    -- disable_italics = false,
-    ---@deprecated Replaced by `options.highlight_groups`
-    -- bold_vert_split = false
 }
 
 local function migrate(options)
