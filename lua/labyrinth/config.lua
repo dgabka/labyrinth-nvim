@@ -1,4 +1,4 @@
----@alias Variant "gloom" | "dusk" | "shade" | "mist"
+---@alias Variant "gloom" | "dusk" | "mist"
 ---@alias Palette { base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, crimson: string, sun: string, amber: string, moss: string, leaf: string, haze: string }
 ---@alias PaletteColor "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "crimson" | "sun" | "amber" | "moss" | "leaf" | "haze" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }

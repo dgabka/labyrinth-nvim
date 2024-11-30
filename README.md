@@ -6,7 +6,6 @@ Labyrinth provides four distinct variants with varying levels of contrast and co
 
  - **Gloom**: The most contrasty variant, perfect for those who prefer sharp distinctions and vibrant colors.
  - **Dusk**: A balanced variant, offering a comfortable middle ground with moderate contrast and vibrancy.
- - **Shade**: A softer variant with reduced contrast, ideal for a more subdued and relaxed visual experience.
  - **Mist**: The least contrasty variant, featuring the most gentle and subtle tones for a calm and unobtrusive interface.
 
 Whether you're coding, designing, or simply exploring new aesthetics, Labyrinth adapts to your needs with its harmonious palette.
@@ -24,7 +23,7 @@ Install `dgabka/labyrinth-nvim` using your favourite plugin manager:
     priority = 1000,
     config = function()
         require("labyrinth").setup {
-            variant = "shade", -- or gloom or dusk or mist
+            variant = "dusk", -- or gloom or mist
         }
         vim.cmd.colorscheme "labyrinth"
     end,
@@ -41,10 +40,6 @@ Install `dgabka/labyrinth-nvim` using your favourite plugin manager:
 
 ![Neovim with Labyrinth Dusk](assets/dusk.png)
 
-**Labyrinth Shade**
-
-![Neovim with Labyrinth Shade](assets/shade.png)
-
 **Labyrinth Mist**
 
 ![Neovim with Labyrinth Mist](assets/mist.png)
@@ -54,7 +49,7 @@ Install `dgabka/labyrinth-nvim` using your favourite plugin manager:
 > [!IMPORTANT]
 > Configure options _before_ setting colorscheme.
 
-Labyrinth has four variants: gloom, dusk, shade and mist. Defaults to dusk.
+Labyrinth has three variants: gloom, dusk and mist. Defaults to dusk.
 
 ```lua
 require("labyrinth").setup({
