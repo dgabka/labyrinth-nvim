@@ -53,8 +53,8 @@ local variants = {
         leaf = "#6E826E",
         haze = "#7C6C8B",
         highlight_low = "#1C2319",
-        highlight_med = "#283225",
-        highlight_high = "#2D3C28",
+        highlight_med = "#3C4632",
+        highlight_high = "#5F645A",
         none = "NONE",
     },
 }
